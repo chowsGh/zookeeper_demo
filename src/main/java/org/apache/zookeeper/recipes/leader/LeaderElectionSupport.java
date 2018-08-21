@@ -124,7 +124,7 @@ public class LeaderElectionSupport implements Watcher {
    * listeners.
    * </p>
    */
-  public synchronized void start() {
+    public synchronized void start() {
     state = State.START;
     dispatchEvent(EventType.START);
 

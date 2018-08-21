@@ -310,7 +310,7 @@ public abstract class ClientBase extends ZKTestCase {
         return createTmpDir(BASETEST);
     }
     static File createTmpDir(File parentDir) throws IOException {
-        File tmpFile = File.createTempFile("test", ".junit", parentDir);
+        File tmpFile = File.createTempFile("test", ".junit", null);
         // don't delete tmpFile - this ensures we don't attempt to create
         // a tmpDir with a duplicate name
         File tmpDir = new File(tmpFile + ".dir");
